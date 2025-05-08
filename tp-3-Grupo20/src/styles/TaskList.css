@@ -1,0 +1,31 @@
+.list-container {
+    margin-top: 1rem;
+}
+
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+    border: 1px solid rgb(217, 217, 217);
+}
+
+.task-text {
+    flex-grow: 1;
+}
+
+.delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.delete-button:hover {
+    background-color: #ffeeee;
+}

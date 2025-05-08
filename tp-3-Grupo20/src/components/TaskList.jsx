@@ -1,8 +1,12 @@
 import TaskItem from "./TaskItem";
 
-function TaskList({ tasks }) {
+function TaskList({ tasks, onDeleteTask }) {
+
+
   return (
-    <TaskItem tasks={tasks}/>
+    <div className="list-container">
+      <TaskItem tasks={tasks} onDeleteTask={onDeleteTask}/>
+    </div>
   );
 }
 

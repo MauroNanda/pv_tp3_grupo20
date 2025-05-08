@@ -10,11 +10,17 @@ function App() {
     setTasks([...tasks, { id: Date.now(), text }]);
   };
 
+  const handleDeleteTask = (id) => {
+    setTasks(currentTasks => currentTasks.filter(task => task.id !== id));
+    console.log(`Tarea con ID: ${id} eliminada`);
+};
+
+
   return (
     <div className="app-container">
       <h1>Lista de tareas TP3</h1>
       <TaskInput onAdd={addTask} />
-      <TaskList tasks={tasks} />
+      <TaskList onDeleteTask={handleDeleteTask} tasks={tasks} />
     </div>
   );
 }
