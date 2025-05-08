@@ -1,14 +1,8 @@
+import TaskItem from "./TaskItem";
+
 function TaskList({ tasks }) {
   return (
-    <div>
-      <ul>
-        {tasks.map((task) => (
-          <li key={task.id}>
-            {task.text}
-          </li>
-        ))}
-      </ul>
-    </div>
+    <TaskItem tasks={tasks}/>
   );
 }
 
